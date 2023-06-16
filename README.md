@@ -1,8 +1,5 @@
 # PasarKita App - Shop Your Needs, Made Easy with PasarKita!
 
-
-# PasarKita - UMKM E-Commerce App
-
 PasarKita is an e-commerce application designed to support micro, small, and medium enterprises (UMKM) by providing a platform for users to conveniently purchase products from local markets using their smartphones.
 
 This repository contains the source code and documentation for the PasarKita mobile application. With PasarKita, users can browse a wide range of products, place orders, and make secure payments, all from the comfort of their smartphones. The app aims to bridge the gap between traditional markets and online shopping, empowering local businesses and improving accessibility for customers.
