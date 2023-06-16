@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#53B175</color>
+    <color name="orange">#F09204</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whitesmoke">#f2F3F2</color>
+
+    <color name="secondary_text">#9D9D9D</color>
+
+    <color name="sayuran">#A3EBAA</color>
+    <color name="buah">#EBABA3</color>
+    <color name="daging">#E7D492</color>
+    <color name="olahan_ikan">#9FC7E4</color>
+    <color name="bumbu_makanan">#CED0F3</color>
+    <color name="makanan_minuman">#FFDAA2</color>
+</resources>

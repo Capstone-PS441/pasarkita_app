@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1045970809251",
+    "firebase_url": "https://pasarkita-15-default-rtdb.firebaseio.com",
+    "project_id": "pasarkita-15",
+    "storage_bucket": "pasarkita-15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045970809251:android:5d3104eea8963687bf2a16",
+        "android_client_info": {
+          "package_name": "com.rayhan.pasarkitarevision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045970809251-ls4phakpg5sh9s92il55s8g937an9rhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD59Gaygj6qqmqCmZVZyuqxV8OkuMSV2pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045970809251-ls4phakpg5sh9s92il55s8g937an9rhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_beranda">
+
+    <fragment
+        android:id="@+id/navigation_beranda"
+        android:name="com.rayhan.pasarkitarevision.ui.beranda.BerandaFragment"
+        android:label="@string/title_beranda"
+        tools:layout="@layout/fragment_beranda">
+        <action
+            android:id="@+id/action_navigation_beranda_to_navigation_detail_produk"
+            app:destination="@id/navigation_detailproduk">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_navigation_beranda_to_navigation_search"
+            app:destination="@+id/navigation_search">
+            <argument
+                android:name="searchQuery"
+                app:argType="string">
+            </argument>
+        </action>
+        <action
+            android:id="@+id/action_navigation_beranda_to_navigation_category"
+            app:destination="@id/navigation_category">
+            <argument
+                android:name="category"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_category"
+        android:name="com.rayhan.pasarkitarevision.ui.category.CategoryFragment"
+        android:label="category"
+        tools:layout="@layout/fragment_produk" >
+        <action
+            android:id="@+id/action_navigation_category_to_navigation_detail_produk"
+            app:destination="@id/navigation_detailproduk">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_navigation_category_to_navigation_search"
+            app:destination="@+id/navigation_search">
+            <argument
+                android:name="searchQuery"
+                app:argType="string">
+            </argument>
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detailproduk"
+        android:name="com.rayhan.pasarkitarevision.ui.detailproduk.DetailProdukFragment"
+        android:label="Detail Produk"
+        tools:layout="@layout/fragment_detailproduk">
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_detail_produk"
+            app:destination="@id/navigation_detailproduk">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_detail_toko"
+            app:destination="@id/navigation_detailtoko">
+            <argument
+                android:name="sellerId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.rayhan.pasarkitarevision.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_detail_produk"
+            app:destination="@id/navigation_detailproduk">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_detailtoko"
+        android:name="com.rayhan.pasarkitarevision.ui.detailtoko.DetailTokoFragment"
+        android:label="Detail Toko"
+        tools:layout="@layout/fragment_detailtoko">
+        <action
+            android:id="@+id/action_navigation_detail_toko_to_navigation_detail_produk"
+            app:destination="@id/navigation_detailproduk">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_produk"
+        android:name="com.rayhan.pasarkitarevision.ui.produk.ProdukFragment"
+        android:label="@string/title_produk"
+        tools:layout="@layout/fragment_produk" >
+        <action
+            android:id="@+id/action_navigation_produk_to_navigation_detail_produk"
+            app:destination="@id/navigation_detailproduk">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_navigation_produk_to_navigation_search"
+            app:destination="@+id/navigation_search">
+            <argument
+                android:name="searchQuery"
+                app:argType="string">
+            </argument>
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_keranjang"
+        android:name="com.rayhan.pasarkitarevision.ui.keranjang.CartFragment"
+        android:label="@string/title_produk"
+        tools:layout="@layout/fragment_produk" >
+        <action
+            android:id="@+id/action_navigation_keranjang_to_navigation_checkout"
+            app:destination="@id/navigation_checkout">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="com.rayhan.pasarkitarevision.ui.profil.ProfilFragment"
+        android:label="@string/title_profil"
+        tools:layout="@layout/fragment_profil" />
+
+    <fragment
+        android:id="@+id/navigation_checkout"
+        android:name="com.rayhan.pasarkitarevision.ui.checkout.CheckoutFragment"
+        android:label="@string/title_checkout"
+        tools:layout="@layout/fragment_checkout" />
+
+
+</navigation>

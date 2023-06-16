@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar_detailproduk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingHorizontal="20dp"
+    android:elevation="10dp"
+    android:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/btn_kurang_kuantitas"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_btn_kuantitas"
+        android:text="-"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/orange"/>
+
+    <EditText
+        android:id="@+id/et_kuantitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:gravity="center_horizontal"
+        android:backgroundTint="@color/orange"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/btn_tambah_kuantitas"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_btn_kuantitas"
+        android:text="+"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/orange"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_tambah_keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|end"
+        android:text="Tambah ke Keranjang"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

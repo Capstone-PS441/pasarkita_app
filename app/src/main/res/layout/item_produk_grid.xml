@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/orange"
+android:orientation="vertical"
+android:layout_margin="3dp"
+app:cardCornerRadius="12dp"
+app:cardElevation="10dp"
+android:padding="5dp">
+
+<LinearLayout
+    android:layout_width="113dp"
+    android:layout_height="243dp"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="@color/orange">
+
+    <ImageView
+        android:id="@+id/img_produk"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_nama_produk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:text="Sayur Bayam" />
+
+    <TextView
+        android:id="@+id/tv_satuan_produk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/secondary_text"
+        tools:text="4pcs / pack" />
+
+    <TextView
+        android:id="@+id/tv_harga_produk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="@color/orange"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:text="Rp20.000" />
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PasarKitaRevision</string>
+    <string name="title_beranda">Beranda</string>
+    <string name="title_produk">Produk</string>
+    <string name="title_notifikasi">Notifikasi</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_checkout">Checkout</string>
+</resources>
